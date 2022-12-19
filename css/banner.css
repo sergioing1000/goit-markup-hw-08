@@ -1,0 +1,47 @@
+.banner {
+  height: 400px;
+  background: var(--brand-color-1);
+  background: url(banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
+
+.banner--title {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  color: var(--brand-color-4);
+  margin: 20px auto;
+  width: 360px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.banner li {
+  margin: 20px auto;
+}
+
+.banner__button {
+  padding: 10px 20px;
+  background-color: var(--brand-color-1);
+  border: none;
+  color: var(--brand-color-4);
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.banner__button:hover {
+  background-color: var(--brand-color-4);
+  color: var(--brand-color-1);
+  cursor: pointer;
+}

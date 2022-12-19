@@ -1,0 +1,123 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;  
+}
+.header-logo {
+  padding-left: 20px;
+}
+.header-logo1 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  
+  color: var(--brand-color-1);
+}
+.header-logo2{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: var(--brand-color-2);
+}
+
+.header-button{
+  padding-right: 30px;
+}
+.menu-toggle{
+  border: none;
+  width: 50px;
+  height: 55px;
+  border-radius: 4px;
+}
+
+.header-button-line1{
+  color: black;
+  background-image: url('/images/hamb1.svg');
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+.header-button-line2{
+  background-image: url('/images/hamb1.svg');
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+.header-button-line3 {
+  background-image: url('/images/hamb1.svg');
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.menu-toggle:hover .header-button-line1{
+  background-image: url('/images/hamb1b.svg');
+  color: var(--brand-color-1);
+
+  animation-name: bouncer1;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;  
+}
+.menu-toggle:hover .header-button-line2 {
+  background-image: url('/images/hamb1b.svg');
+  color: var(--brand-color-1);
+
+  animation-name: bouncer2;
+  animation-duration: 0.25s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-delay: 0.1s;
+}
+.menu-toggle:hover .header-button-line3 {
+  background-image: url('/images/hamb1b.svg');
+  color: var(--brand-color-1);
+
+  animation-name: bouncer3;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-delay: 0.15s;
+}
+
+@keyframes bouncer1 {
+  0% {
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 12deg;
+  }
+  100% {
+    rotate: -12deg;
+  }
+}
+
+@keyframes bouncer2 {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: -12deg;
+  }
+  100% {
+    rotate: 12deg;
+  }
+}
+
+@keyframes bouncer3 {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+  100% {
+    rotate: -15deg;
+  }
+
+}
