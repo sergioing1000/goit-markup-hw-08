@@ -28,16 +28,15 @@
           </ul>
         </button>
 
-        <ul class="menu">
-          <li><a href="" class="link">Studio</a></li>
-          <li><a href="" class="link">Portfolio</a></li>
-          <li><a href="" class="link">Contacts</a></li>
+        <ul class="header__menu">
+          <li><a href="" class="header__menu-link">Studio</a></li>
+          <li><a href="" class="header__menu-link">Portfolio</a></li>
+          <li><a href="" class="header__menu-link">Contacts</a></li>
         </ul>
 
       </li>
     </ul>
   </header>
-
   <section> <!-- Banner -->
   
     <ul class="banner">
@@ -399,6 +398,147 @@
       </li>
     </ul>
   </footer>
+
+  <div class="lateral-menu-container js-menu-container" id="mobile-menu"> <!-- Lateral-->
+    <button class="menu-toggle js-close-menu">
+      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+  
+    <ul class="lateral__mobile-menu">
+      <ul class="lateral__mobile-menu-links">
+        <li>
+          <a href="./index.html" class="lateral__mobile-menu-link">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="lateral__mobile-menu-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contacts.html" class="lateral__mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="tel:+1 212-772-4150" class="lateral__mobile-phone">
+            <svg width="20" height="32">
+              <use href="./images/icons.svg#cell"></use>
+              fill="purple"
+            </svg>
+            +1 212-772-4150
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="lateral__mobile-mail">
+            <svg width="32" height="24">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul  class="lateral__mobile-socialm">
+        <li class="lateral__mobile-socialm-item">
+          <a href="https://instagram.com/" target="_blank">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+            Instagram
+          </a>
+        </li>
+        <li class="lateral__mobile-socialm-item" target="_blank">
+          <a href="https://twitter.com/">
+            <svg width="20" height="18">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+            Twitter
+          </a>
+        </li>
+        <li class="lateral__mobile-socialm-item">
+          <a href="https://facebook.com" target="_blank">
+            <svg width="11" height="20">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+            Facebook
+          </a>
+        </li>
+        <li class="lateral__mobile-socialm-item">
+          <a href="https://linkedin.com" target="_blank">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+
+    </ul>
+  </div>
+  
+  <div class="backdrop is-hidden" id="data-modal"> <!-- Modal -->
+  
+    <div class="modal">
+      <section class="modal-close-button">
+        <button id="data-modal-close" class="modal-close">
+          <svg class="modal-icon-close">
+            <use href="./images/close-button.svg#svg2"></use>
+          </svg>
+        </button>
+      </section>
+  
+      <section class="modal-title">
+        <p class="modal-title">
+          Leave your information and we'll call you back.
+        </p>
+      </section>
+  
+      <form class="modal-form" action="">
+        <label class="modal-form-label">
+          <p>Name</p>
+          <input class="modal-form-name-input" type="text" name="name" placeholder="        Name" required
+            minlength="3" />
+        </label>
+  
+        <label class="modal-form-label">
+          <p>Telephone</p>
+          <input class="modal-form-phone-input" type="tel" name="tel" placeholder="        Telephone" required
+            minlength="3" />
+        </label>
+  
+        <label class="modal-form-label">
+          <p>E-mail</p>
+          <input class="modal-form-email-input" type="email" name="email" placeholder="        E-mail" required
+            minlength="3" />
+        </label>
+  
+        <label class="modal-form-label">
+          <p>Comments</p>
+          <textarea class="modal-form-textarea" name="feedback" rows="8"
+            placeholder="    Enter the coomment here..."></textarea>
+        </label>
+  
+        <div class="modal-form__container-checkbox">
+          <label for="myCheckBox" class="modal-form__label-for-checkbox">
+            <input type="checkbox" id="myCheckBox" class="modal-form__custom-checkbox" name="myCheckBox" />
+          </label>
+          <p>
+            I agree with the newsletter and accept the Terms and Conditions
+          </p>
+        </div>
+  
+        <button class="modal-form-button" type="submit" name="modal-button">
+          <span> SEND </span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+  <script defer src="js/mobile-menu.js"></script>
 
 </body>
 </html>

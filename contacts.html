@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <title>😎goit-markup-hw-08😎</title>
+  <title>Document</title>
+</head>
+<body>
+  <header> <!-- header -->
+    <ul class="header">
+      <li class="header-logo">
+        <span class="header-logo1">WEB</span><span class="header-logo2">STUDIO</span>
+      </li>
+      <li class="header-button">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <ul>
+            <li class="header-button-line1">
+              <span> . </span>
+            </li>
+            <li class="header-button-line2">
+              <span> . </span>
+            </li>
+            <li class="header-button-line3">
+              <span> . </span>
+            </li>
+          </ul>
+        </button>
+
+        <ul class="header__menu">
+          <li><a href="" class="header__menu-link">Studio</a></li>
+          <li><a href="" class="header__menu-link">Portfolio</a></li>
+          <li><a href="" class="header__menu-link">Contacts</a></li>
+        </ul>
+
+      </li>
+    </ul>
+  </header>
+  
+  <section> <!-- main -->
+    <img src="./images/ucweb.jpg" alt="Page Under construction.">
+  
+    <form>
+      <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+  </section>
+
+  <footer> <!-- footer -->
+    <ul class="footer">
+      <li class="footer__up">
+        <div>
+          <span class="footer-logo1">Web</span><span class="footer-logo2">Studio</span>
+        </div>
+        <p class="footer__address">
+          695 Park Ave, New York, NY 10065, United States
+        </p>
+  
+        <ul>
+          <li class="footer__email">
+            <a href="mailto:info@devstudio.com">
+              <svg width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="footer__phone">
+            <a href="tel=+1 212-772-4150">
+              <svg width="10" height="16">
+                <use href="./images/icons.svg#cell"></use>
+              </svg>
+              +1 212-772-4150
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p class="footer-findus">Find us on</p>
+        <ul class="footer-findus-smicons">
+          <a href="https://instagram.com/" target="_blank">
+            <li class="footer-smicon">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <li class="footer-smicon">
+              <svg width="20" height="18">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <li class="footer-smicon">
+              <svg width="11" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <li class="footer-smicon">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </li>
+          </a>
+        </ul>
+      </li>
+      <li>
+        <p class="footer-subscribe--title">Subscribe to the newsletter</p>
+        <form class="footer__form-subscribe">
+          <label>
+            <input class="footer__form-subs--email" placeholder=" E-mail" type="email" name="email" />
+          </label>
+          <button class="footer__form-subcribe--button" type="submit">
+            <span>Suscribe</span>
+  
+            <svg class="footer__form-subcribe--icon" width="16" height="15">
+              <use href="/images/icons.svg#subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </li>
+    </ul>
+  </footer>
+
+  <div class="lateral-menu-container js-menu-container" id="mobile-menu"> <!-- Lateral-->
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+  
+    <ul class="lateral__mobile-menu">
+      <ul class="lateral__mobile-menu-links">
+        <li>
+          <a href="./index.html" class="lateral__mobile-menu-link">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="lateral__mobile-menu-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contacts.html" class="lateral__mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+  
+      <ul>
+        <li>
+          <a href="">+1 212 772-4150</a>
+        </li>
+        <li>
+          <a href="">info@devstudio.com</a>
+        </li>
+      </ul>
+  
+      <ul>
+        <li>
+          <a href="">Instagram</a>
+        </li>
+        <li>
+          <a href="">Twitter</a>
+        </li>
+        <li>
+          <a href="">Facebook</a>
+        </li>
+        <li>
+          <a href="">LinkedIn</a>
+        </li>
+      </ul>
+  
+    </ul>
+  </div>
+  
+  <script defer src="js/mobile-menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+.lateral-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #FFFFFF;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 600ms ease-in-out;
+}
+
+.lateral-menu-container.is-open {
+  transform: translateX(0);
+  height: 100%;
+  width: 100%;
+}
+
+.lateral-menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.menu-toggle svg {
+  fill: black;
+}
+
+.menu-toggle:hover svg {
+  fill: var(--brand-color-1);
+}
+
+.lateral__mobile-menu {
+  height: 100%;
+  background-color: var(--brand-color-4);
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  align-items: left;
+}
+
+.lateral__mobile-menu .lateral__mobile-menu-link {
+  display: block;
+  padding: 10px;
+  color: #212121;
+  text-decoration: none;
+}
+
+
+
+.lateral__mobile-menu-link {
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  
+    color: #212121;
+    
+}
+
+.lateral__mobile-phone,
+.lateral__mobile-mail{
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  
+  letter-spacing: 0.02em;
+
+  color: var(--brand-color-1);
+  text-decoration: none;
+
+  fill: var(--brand-color-1); 
+
+}
+.lateral__mobile-socialm{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lateral__mobile-socialm-item a,
+.lateral__mobile-socialm-item a:visited{
+  text-decoration: none;
+  color: var(--brand-color-1);
+}
+
+.lateral__mobile-socialm-item svg{
+  fill: var(--brand-color-1);
+}

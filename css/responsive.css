@@ -1,0 +1,11 @@
+
+ @media (max-width: 480px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  .menu-toggle {
+    display: none;
+  }
+}
