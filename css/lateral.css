@@ -83,17 +83,61 @@
 .lateral__mobile-socialm{
 
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.lateral__mobile-socialm-item a,
-.lateral__mobile-socialm-item a:visited{
+.lateral__mobile-socialm-item1 a,
+.lateral__mobile-socialm-item1 a:visited,
+.lateral__mobile-socialm-item2 a,
+.lateral__mobile-socialm-item2 a:visited,
+.lateral__mobile-socialm-item3 a,
+.lateral__mobile-socialm-item3 a:visited,
+.lateral__mobile-socialm-item4 a,
+.lateral__mobile-socialm-item4 a:visited{
   text-decoration: none;
   color: var(--brand-color-1);
 }
 
-.lateral__mobile-socialm-item svg{
+.lateral__mobile-socialm-item1 svg,
+.lateral__mobile-socialm-item2 svg,
+.lateral__mobile-socialm-item3 svg,
+.lateral__mobile-socialm-item4 svg{
   fill: var(--brand-color-1);
+}
+
+.lateral__mobile-socialm-item1:after{
+  content: "";
+  background-color: var(--brand-color-6);
+  position: absolute;
+
+  display: inline;
+  height: 100%;
+  width: 1px;
+
+  left: 28%;
+}
+.lateral__mobile-socialm-item2:after {
+  content: "";
+  background-color: var(--brand-color-6);
+  position: absolute;
+
+  display: inline;
+  height: 100%;
+  width: 1px;
+
+  left: 50%;
+}
+.lateral__mobile-socialm-item3:after {
+  content: "";
+  background-color: var(--brand-color-6);
+  position: absolute;
+
+  display: inline;
+  height: 100%;
+  width: 1px;
+
+  left: 74%;
 }

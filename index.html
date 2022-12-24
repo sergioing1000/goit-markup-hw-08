@@ -28,13 +28,38 @@
           </ul>
         </button>
 
-        <ul class="header__menu">
-          <li><a href="" class="header__menu-link">Studio</a></li>
-          <li><a href="" class="header__menu-link">Portfolio</a></li>
-          <li><a href="" class="header__menu-link">Contacts</a></li>
-        </ul>
-
       </li>
+
+      <ul class="header__menu">
+        <li>
+          <ul class="header__menu-nav-bar">
+            <li><a href="./index.html" class="header__menu-nav-bar-link">Studio</a></li>
+            <li><a href="./portfolio.html" class="header__menu-nav-bar-link">Portfolio</a></li>
+            <li><a href="./contacts.html" class="header__menu-nav-bar-link">Contacts</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="header__menu-contact">
+            <li class="header__contact-data-email">
+              <a href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header__contact-data-phone">
+              <a href="tel:+1 212-772-4150">
+                <svg width="10" height="16">
+                  <use href="./images/icons.svg#cell"></use>
+                </svg>
+                +1 212-772-4150
+              </a>
+            </li>
+          </ul>
+        </li>        
+      </ul>
+
     </ul>
   </header>
   <section> <!-- Banner -->
@@ -72,8 +97,7 @@
         <article class="features-text__item">
           <h4 class="features-text__item--title">PUNCTUALITY</h4>
           <p class="features-text__item--desc">
-            With us, you can feel safe and secure. An important principle of
-            the company: respect your time and respect the agreed deadlines.
+            With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.
           </p>
         </article>
       </li>
@@ -84,8 +108,7 @@
         <article class="features-text__item">
           <h4 class="features-text__item--title">PLANNING</h4>
           <p class="features-text__item--desc">
-            You will be able to observe and participate in every phase of
-            solution development and implementation.
+            You will be able to observe and participate in every phase of solution development and implementation.
           </p>
         </article>
       </li>
@@ -96,8 +119,7 @@
         <article class="features-text__item">
           <h4 class="features-text__item--title">MODERN TECHNOLOGIES</h4>
           <p class="features-text__item--desc">
-            You will be able to observe and participate in every phase of
-            solution development and implementation.
+            We use innovative tools to solve assigned tasks. It's time to simplify work processes.
           </p>
         </article>
       </li>
@@ -442,7 +464,7 @@
       </ul>
 
       <ul  class="lateral__mobile-socialm">
-        <li class="lateral__mobile-socialm-item">
+        <li class="lateral__mobile-socialm-item1">
           <a href="https://instagram.com/" target="_blank">
             <svg width="20" height="20">
               <use href="./images/icons.svg#instagram"></use>
@@ -450,7 +472,7 @@
             Instagram
           </a>
         </li>
-        <li class="lateral__mobile-socialm-item" target="_blank">
+        <li class="lateral__mobile-socialm-item2" target="_blank">
           <a href="https://twitter.com/">
             <svg width="20" height="18">
               <use href="./images/icons.svg#twitter"></use>
@@ -458,7 +480,7 @@
             Twitter
           </a>
         </li>
-        <li class="lateral__mobile-socialm-item">
+        <li class="lateral__mobile-socialm-item3">
           <a href="https://facebook.com" target="_blank">
             <svg width="11" height="20">
               <use href="./images/icons.svg#facebook"></use>
@@ -466,7 +488,7 @@
             Facebook
           </a>
         </li>
-        <li class="lateral__mobile-socialm-item">
+        <li class="lateral__mobile-socialm-item4">
           <a href="https://linkedin.com" target="_blank">
             <svg width="20" height="20">
               <use href="./images/icons.svg#linkedin"></use>
@@ -478,7 +500,7 @@
 
     </ul>
   </div>
-  
+
   <div class="backdrop is-hidden" id="data-modal"> <!-- Modal -->
   
     <div class="modal">

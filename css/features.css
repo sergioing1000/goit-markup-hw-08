@@ -18,6 +18,8 @@
   flex-direction: column;
   align-content: center;
 
+  width: 95%;
+
 }
 .features-pics__img {
   background-color: var(--brand-color-5);
@@ -40,6 +42,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
 }
 
 .features-text__item--title {
@@ -67,5 +70,7 @@
   letter-spacing: 0.03em;
 
   color: var(--brand-color-3);
+
+  text-align: center;
 
 }

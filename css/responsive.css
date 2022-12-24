@@ -1,11 +1,36 @@
 
- @media (max-width: 480px) {
+ @media screen and (max-width: 480px) {
   .header__menu {
     display: none;
-  }
+  }  
+ 
 }
-@media (min-width: 481px) {
-  .menu-toggle {
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+  .header-button{
     display: none;
   }
+
+  .header__menu-contact{
+    display: none;
+  }
+
 }
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .header-button {
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 1201px) {
+   
+  .header-button {
+    display: none;
+  }
+
+ }
