@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/index.css">
-  <title>😎goit-markup-hw-08😎</title>
-  <title>Document</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <title>goit-markup-hw-08😎😎</title>
 </head>
 <body>
+
   <header> <!-- header -->
     <ul class="header">
       <li class="header-logo">
@@ -28,16 +29,42 @@
             </li>
           </ul>
         </button>
-
-        <ul class="header__menu">
-          <li><a href="" class="header__menu-link">Studio</a></li>
-          <li><a href="" class="header__menu-link">Portfolio</a></li>
-          <li><a href="" class="header__menu-link">Contacts</a></li>
-        </ul>
-
+  
       </li>
+  
+      <ul class="header__menu">
+        <li>
+          <ul class="header__menu-nav-bar">
+            <li><a href="./index.html" class="header__menu-nav-bar-link">Studio</a></li>
+            <li><a href="./portfolio.html" class="header__menu-nav-bar-link">Portfolio</a></li>
+            <li><a href="./contacts.html" class="header__menu-nav-bar-link header__menu-nav-bar-current">Contacts</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="header__menu-contact">
+            <li class="header__contact-data-email">
+              <a href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                <span class="header__contact-data-ep-text">info@devstudio.com</span>
+              </a>
+            </li>
+            <li class="header__contact-data-phone">
+              <a href="tel:+1 212-772-4150">
+                <svg width="10" height="16">
+                  <use href="./images/icons.svg#cell"></use>
+                </svg>
+                <span class="header__contact-data-ep-text">+1 212-772-4150</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  
     </ul>
   </header>
+
   
   <section> <!-- main -->
     <img src="./images/ucweb.jpg" alt="Page Under construction.">
@@ -47,8 +74,8 @@
     </form>
   </section>
 
-  <footer> <!-- footer -->
-    <ul class="footer">
+  <footer class="footer"> <!-- footer -->
+    <ul class="footer__1">
       <li class="footer__up">
         <div>
           <span class="footer-logo1">Web</span><span class="footer-logo2">Studio</span>
@@ -109,6 +136,8 @@
           </a>
         </ul>
       </li>
+    </ul>
+    <ul class="footer__2">
       <li>
         <p class="footer-subscribe--title">Subscribe to the newsletter</p>
         <form class="footer__form-subscribe">
@@ -129,7 +158,7 @@
 
   <div class="lateral-menu-container js-menu-container" id="mobile-menu"> <!-- Lateral-->
     <button class="menu-toggle js-close-menu">
-      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
         <path fill-rule="evenodd"
           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
           clip-rule="evenodd"></path>
@@ -151,32 +180,64 @@
   
       <ul>
         <li>
-          <a href="">+1 212 772-4150</a>
+          <a href="tel:+1 212-772-4150" class="lateral__mobile-phone">
+            <svg width="20" height="32">
+              <use href="./images/icons.svg#cell"></use>
+              fill="purple"
+            </svg>
+            +1 212-772-4150
+          </a>
         </li>
         <li>
-          <a href="">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="lateral__mobile-mail">
+            <svg width="32" height="24">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
       </ul>
   
-      <ul>
-        <li>
-          <a href="">Instagram</a>
+      <ul class="lateral__mobile-socialm">
+        <li class="lateral__mobile-socialm-item1">
+          <a href="https://instagram.com/" target="_blank">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+            Instagram
+          </a>
         </li>
-        <li>
-          <a href="">Twitter</a>
+        <li class="lateral__mobile-socialm-item2" target="_blank">
+          <a href="https://twitter.com/">
+            <svg width="20" height="18">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+            Twitter
+          </a>
         </li>
-        <li>
-          <a href="">Facebook</a>
+        <li class="lateral__mobile-socialm-item3">
+          <a href="https://facebook.com" target="_blank">
+            <svg width="11" height="20">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+            Facebook
+          </a>
         </li>
-        <li>
-          <a href="">LinkedIn</a>
+        <li class="lateral__mobile-socialm-item4">
+          <a href="https://linkedin.com" target="_blank">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+            LinkedIn
+          </a>
         </li>
       </ul>
   
     </ul>
   </div>
-  
+    
   <script defer src="js/mobile-menu.js"></script>
+
 
 </body>
 </html>

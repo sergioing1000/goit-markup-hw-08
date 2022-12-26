@@ -1,7 +1,7 @@
 .banner {
   height: 400px;
   background: var(--brand-color-1);
-  background: url(banner.jpg);
+  background: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -13,7 +13,6 @@
 }
 
 .banner--title {
-
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 26px;
