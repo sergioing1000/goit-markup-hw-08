@@ -125,12 +125,7 @@
 .header__menu{
   display: flex;
   flex-direction: row;
-  padding-right: 20px;
   align-items: center;
-  gap: 50px;
-
-  padding-right: 40px;
-
 }
 
 .header__menu-nav-bar{
@@ -145,6 +140,16 @@
   padding: 10px;
   color: inherit;
   text-decoration: none;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--brand-color-2);
+  
 }
 
 .header__menu-nav-bar .header__menu-nav-bar-link:hover,
@@ -179,6 +184,7 @@
 .header__contact-data-phone a{
   text-decoration: none;
   color: var(--brand-color-3);
+  fill: var(--brand-color-3);
 }
 
 .header__contact-data-email a:hover,

@@ -3,10 +3,10 @@
   gap: 50px;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-
+  
   padding-top: 53px;
 }
+
 
 .features-pics__cont {
   display: flex;

@@ -1,13 +1,24 @@
-
+/*//////////////////*/
+/* TAMAÑO 1 */
+/*//////////////////*/
  @media screen and (max-width: 480px) {
   .header__menu {
     display: none;
-  }  
+  }
+
+  .ourteam-images-r1{
+    display: none;
+  }
  
 }
-
+/*//////////////////*/
+/* TAMAÑO 2 */
+/*//////////////////*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  
+  .menu-toggle{
+    display: none;
+  }
+
   .header-button{
     display: none;
   }
@@ -16,21 +27,198 @@
     display: none;
   }
 
+  .lateral-menu-container{
+    display: none;
+  }
+
+  .what-we-do__images {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .ourteam-images {
+    display: none;
+  }
+  .ourteam-images-r1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .ourteam-images-r2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .regular-customers__columns {
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .regular-customers__boxes {
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 4px;
+  }
+
+  .regular-customers__box {
+    width: 150px;
+    height: 92px;
+  }
+
+
+  
+
 }
 
+/*//////////////////*/
+/* TAMAÑO 3 */
+/*//////////////////*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 
   .header-button {
     display: none;
   }
 
+  .menu-toggle {
+    display: none;
+  }
+    
+  .header__menu {
+    gap: 50px;
+  }
+
+  .header__menu-contact {
+    padding-right: 20px;
+  }
+
+  .header__contact-data-ep-text{
+    display: none;
+  }
+
+  .header__menu-nav-bar-link{
+    font-size: 18px;
+  }
+
+  .features-pics{
+    flex-direction: row;
+    gap: 30px;    
+  }
+
+  .what-we-do__images {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .ourteam-images-r1 {
+    display: none;
+  }
+
+  .ourteam-images-r2 {
+    display: none;
+  }
+
+  .ourteam-images {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .regular-customers__columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .regular-customers__boxes {
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
 
 }
 
+/*//////////////////*/
+/* TAMAÑO 4 */
+/*//////////////////*/
 @media screen and (min-width: 1201px) {
    
   .header-button {
     display: none;
   }
 
- }
+  .menu-toggle {
+    display: none;
+  }
+
+  .header__menu {
+    gap: 50px;
+  }
+
+  .header__menu-contact {
+    padding-right: 20px;
+  }
+
+  .header__menu-nav-bar-link {
+    font-size: 18px;
+  }
+  
+  .header__contact-data-ep-text {
+    font-size: 18px;
+  }
+
+  .features-pics {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .what-we-do__images {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .ourteam-images-r1 {
+    display: none;
+  }
+
+  .ourteam-images-r2 {
+    display: none;
+  }
+
+  .ourteam-images {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .regular-customers__columns {
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .regular-customers__boxes {
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+
+
+}
