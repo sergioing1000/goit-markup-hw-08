@@ -60,7 +60,16 @@
     letter-spacing: 0.02em;
   
     color: #212121;
-    
+}
+
+.lateral__menu-nav-bar-current:after{
+  display: block;
+  content: "";
+  height: 4px;
+  width: 45%;
+  background-color: var(--brand-color-1);
+  border-radius: 2px;
+  top: 20px;
 }
 
 .lateral__mobile-phone,
