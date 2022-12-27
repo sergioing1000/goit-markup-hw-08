@@ -1,6 +1,5 @@
 .banner {
   height: 400px;
-  background: var(--brand-color-1);
   background: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
