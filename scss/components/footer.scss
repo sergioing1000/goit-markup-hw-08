@@ -1,0 +1,219 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $brand-color-7;
+
+  &__1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    padding-top: 60px;
+    padding-bottom: 70px;
+
+    background-color: $brand-color-7;
+  }
+
+  &__2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  
+    gap: 30px;
+  
+    padding-bottom: 70px;
+    background-color: $brand-color-7;
+  }
+
+  &__up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-logo{
+    &1{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+  
+      color: $brand-color-1;
+    }
+
+    &2{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+
+      color: $brand-color-4;
+
+      padding-bottom: 50px;
+    }
+  }
+
+  &__address {
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    letter-spacing: 0.03em;
+
+    color: $brand-color-4;
+
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  &__email a,
+  &__phone a{
+    text-decoration: none;
+    color: $brand-color-3;
+    fill: $brand-color-3;
+  
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__email a:hover,
+  &__phone a:hover,
+  &__email a:focus,
+  &__phone a:focus{
+    text-decoration: none;
+    color: $brand-color-1;
+    outline: none;
+    fill: $brand-color-1;
+    cursor: pointer;    
+  }
+
+  &-findus {
+    text-transform: Uppercase;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    &-smicons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      padding-top: 16px;
+      padding-bottom: 30px;
+  
+    }
+  }
+
+  &-smicon {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: $brand-color-4;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background-color: $brand-color-1;
+      fill: $brand-color-4;
+      cursor: pointer;
+    }
+  }
+
+  &__form-subscribe {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-subscribe--title {
+    text-transform: Uppercase;
+  
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: $brand-color-4;
+    text-align: center;
+  }
+
+  &__form{
+    &-subs--email {
+      width: 400px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &-subcribe{
+      &--button {
+        width: 200px;
+        height: 50px;
+        background: $brand-color-1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-color: $brand-color-1;
+        border-radius: 4px;
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+
+        letter-spacing: 0.06em;
+
+        color: $brand-color-4;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      &--icon{
+        fill: $brand-color-4;
+      }
+    }
+  }
+}

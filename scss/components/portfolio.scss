@@ -1,0 +1,130 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  &__item {
+    background: $brand-color-5;
+    border-radius: 4px;
+    color: $brand-color-2;
+
+    &--button:hover {
+      background: $brand-color-1;
+      color: $brand-color-4;
+  
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
+      border-color: $brand-color-1;
+      ;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &--button:focus {
+      background: $brand-color-1;
+      color: $brand-color-4;
+
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+      border-color: $brand-color-1;
+
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+ 
+}
+
+
+.portfolio {
+  padding-bottom: 94px;
+
+  &__row {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.project__card {
+  border: 1px solid $brand-color-8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    border: 1px solid $brand-color-8;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &-image {
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  &--overlay-text {
+    position: absolute;
+
+    background-color: rgba(33, 150, 243, 0.8);
+    display: flex;
+
+    padding: 63px 24px;
+
+    width: 370px;
+    text-align: left;
+    color: $brand-color-4;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+  }
+
+  &:hover .project__card--overlay-text {
+
+    transform: translateY(-115%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+  &-text {
+    padding: 20px 24px;
+  }
+
+  &-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+
+    color: $brand-color-2;
+
+  }
+
+  &-type {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
+    color: $brand-color-3;
+
+  }
+}
+
+

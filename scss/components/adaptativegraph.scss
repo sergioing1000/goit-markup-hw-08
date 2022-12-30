@@ -1,0 +1,34 @@
+@media (max-device-pixel-ratio: 1.51),
+(max-resolution: 192dpi),
+(max-resolution: 2dppx) {
+
+  .ourteam__pic2 {
+    display: none;
+  }
+
+}
+
+@media (min-device-pixel-ratio: 1.50),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .banner {
+    background: url("../images/banner@2x.jpg");
+  }
+
+  .what-we-do__images li:nth-child(1) {
+    background: #ffffff url("../images/imagen1@2x.jpg") no-repeat right top;
+  }
+
+  .what-we-do__images li:nth-child(2) {
+    background: #ffffff url("../images/imagen2@2x.jpg") no-repeat right top;
+  }
+
+  .what-we-do__images li:nth-child(3) {
+    background: #ffffff url("../images/imagen3@2x.jpg") no-repeat right top;
+  }
+
+  .ourteam__pic {
+    display: none;
+  }
+
+}

@@ -1,0 +1,275 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.659);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 581px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+    &-button {
+      align-self: flex-end;
+    }
+  }
+
+  &-icon-close {
+    width: 35px;
+    height: 35px;
+    fill: #000000;
+  }
+
+  &-title {
+    align-self: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $brand-color-2;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    &-label {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+  
+      letter-spacing: 0.01em;
+  
+      color: $brand-color-3;
+      padding-top: 20px;
+    }
+
+    $nombres: "name" "person.svg",
+      "phone" "phone.svg",
+      "email" "email.svg";
+
+    @each $name,
+    $file in $nombres {
+
+      &-#{$name}-input {
+
+        width: 100%;
+        height: 35px;
+        border: 1px solid $brand-color-6;
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        background-image: url('../images/#{$file}');
+        background-repeat: no-repeat;
+        background-position: 2% 50%;
+
+      }
+    }
+    
+    &-textarea {
+      resize: none;
+      width: 100%;
+      border: 1px solid $brand-color-6;
+      background: #FFFFFF;
+      border-radius: 4px;
+    }
+
+    &-acceptance {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    
+      padding-top: 20px;
+      padding-bottom: 40px;
+      
+      &-text {      
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    
+        letter-spacing: 0.03em;
+    
+        color: $brand-color-3;
+      }
+    }
+
+    &-name-input:hover,
+    &-phone-input:hover,
+    &-email-input:hover,
+    &-textarea:hover {
+      cursor: pointer;
+      color: $brand-color-1;
+      border-width: 3px;
+      border-radius: 4px;
+    }
+
+    $nombres: "name" "hover" "person-b.svg",
+      "name" "focus" "person-b.svg",
+
+      "phone" "hover" "phone-b.svg",
+      "phone" "focus" "phone-b.svg",
+
+      "email" "hover" "email-b.svg",
+      "email" "focus" "email-b.svg";
+
+
+    @each $name,
+    $option,
+    $file in $nombres {
+      &-#{$name}-input:#{$option} {
+
+        border-color: $brand-color-1;
+        background-image: url('../images/#{$file}');
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(.21, 1.74, .96, -0.85);
+        color: red;
+      }
+    }
+
+    &-textarea:hover,
+    &-textarea:focus{
+      border-color: $brand-color-1;
+      transition: 250ms;
+      transition-timing-function: cubic-bezier(.21, 1.74, .96, -0.85);
+    }
+
+    &-name-input:focus-within,
+    &-phone-input:focus-within,
+    &-email-input:focus-within,
+    &-textarea:focus-within {
+      cursor: pointer;
+      border-color: $brand-color-1;
+      color: $brand-color-1;
+      border-width: 3px;
+      border-radius: 4px;
+    }
+
+    &-name-input:not(:placeholder-shown),
+    &-phone-input:not(:placeholder-shown),
+    &-email-input:not(:placeholder-shown),
+    &-textarea:not(:placeholder-shown){
+      border-color: $brand-color-1;
+      background-image: none;
+      color: $brand-color-1;
+    }
+
+    &__container-checkbox {
+      display: flex;
+      align-items: center;
+
+    }
+
+    &__label-for-checkbox {
+
+      display: inline-block;
+      position: relative;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 40px;
+
+      height: 40px;
+      width: 60px;
+    }
+
+    &__custom-checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: inline-block;
+      position: absolute;
+      background: url('../images/check-off.png') no-repeat right 10px top 5px;
+
+      background-size: 24px 24px;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    &__custom-checkbox:checked {
+      background: url('../images/check-on.png') no-repeat right 10px top 5px;
+
+      background-size: 24px 24px;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    &-button {
+      width: 30%;
+      align-self: center;
+      padding: 10px;
+
+      width: 20%;
+      align-self: center;
+      height: 50px;
+    
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+    
+      background: $brand-color-1;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border-color: $brand-color-1;
+    
+      text-align: center;
+      letter-spacing: 0.06em;
+    
+      color: #FFFFFF;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+}

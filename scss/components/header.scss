@@ -1,0 +1,212 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  &-logo {
+    padding-left: 20px;
+  }
+  &-logo1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: $brand-color-1;
+  }
+  &-logo2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: $brand-color-2;
+  }
+  &-button {
+    padding-right: 30px;
+  }
+
+  &-button-line1 {
+    color: black;
+    background-image: url('/images/hamb1.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+  }
+
+  &-button-line2 {
+    background-image: url('/images/hamb1.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+  }
+
+  &-button-line3 {
+    background-image: url('/images/hamb1.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    &-nav-bar {
+      display: flex;
+      flex-direction: row;
+      padding-right: 10px;
+      gap: 20px;
+      align-self: center;
+
+      &-link {
+      
+        color: inherit;
+        text-decoration: none;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
+        color: $brand-color-2;
+    
+      }
+
+      & .header__menu-nav-bar-link:hover,
+      & .header__menu-nav-bar-link:focus{
+        text-decoration: none;
+        color: $brand-color-1;
+      }
+
+      &-current:after {
+        display: block;
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: $brand-color-1;
+        border-radius: 2px;
+        top: 60px;
+      }
+    }
+
+    &-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-self: center;
+    }
+  }
+
+  &__contact{
+    
+    &-data-email a,
+    &-data-phone a {
+      text-decoration: none;
+      color: $brand-color-3;
+      fill: $brand-color-3;
+    }
+
+    &-data-email a:hover,
+    &-data-phone a:hover{
+      color: $brand-color-1;
+      fill: $brand-color-1;
+    }
+  }
+}
+
+.menu-toggle {
+  border: none;
+  width: 50px;
+  height: 55px;
+  border-radius: 4px;
+
+  min-height: 40px;
+  min-width: 40px;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover .header-button{
+    
+    &-line1 {
+      background-image: url('/images/hamb1b.svg');
+      color: $brand-color-1;
+
+      animation-name: bouncer1;
+      animation-duration: 0.2s;
+      animation-timing-function: linear;
+      animation-iteration-count: 2;
+    }
+
+    &-line2 {
+      background-image: url('/images/hamb1b.svg');
+      color: $brand-color-1;
+
+      animation-name: bouncer2;
+      animation-duration: 0.25s;
+      animation-timing-function: linear;
+      animation-iteration-count: 2;
+      animation-delay: 0.1s;
+    }
+
+    &-line3 {
+      background-image: url('/images/hamb1b.svg');
+      color: var(--brand-color-1);
+
+      animation-name: bouncer3;
+      animation-duration: 0.3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 2;
+      animation-delay: 0.15s;
+    }
+  }
+}
+
+@keyframes bouncer1 {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 12deg;
+  }
+  100% {
+    rotate: -12deg;
+  }
+}
+
+@keyframes bouncer2 {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: -12deg;
+  }
+  100% {
+    rotate: 12deg;
+  }
+}
+
+@keyframes bouncer3 {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+  100% {
+    rotate: -15deg;
+  }
+}

@@ -1,0 +1,155 @@
+.lateral-menu{
+  &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #FFFFFF;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 600ms ease-in-out;
+
+    &.is-open {
+      transform: translateX(0);
+      height: 100%;
+      width: 100%;
+    }
+
+    & .menu-toggle {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      color: #fff;    
+    }
+  }
+  
+}
+
+.lateral__menu-nav-bar-current:after {
+  display: block;
+  content: "";
+  height: 4px;
+  width: 45%;
+  background-color: $brand-color-1;
+  border-radius: 2px;
+  top: 20px;
+}
+
+.lateral__mobile{
+  &-menu {
+    height: 100%;
+    background-color: &brand-color-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+
+    & .lateral__mobile-menu-link{
+      display: block;
+      padding: 10px;
+      color: #212121;
+      text-decoration: none;
+    }
+
+    &-link {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+
+      color: #212121;
+    }
+  }
+  &-phone,
+  &-mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+
+    color: &brand-color-1;
+    text-decoration: none;
+
+    fill: &brand-color-1;
+  }
+
+  &-socialm {
+
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &-item1 a,
+    &-item1 a:visited,
+    &-item2 a,
+    &-item2 a:visited,
+    &-item3 a,
+    &-item3 a:visited,
+    &-item4 a,
+    &-item4 a:visited {
+      text-decoration: none;
+      color: $brand-color-1;      
+    }
+
+    &-item1 svg,
+    &-item2 svg,
+    &-item3 svg,
+    &-item4 svg {
+      fill: $brand-color-1;
+    }
+
+    &-item1:after {
+      content: "";
+      background-color: $brand-color-6;
+      position: absolute;
+
+      display: inline;
+      height: 100%;
+      width: 1px;
+
+      left: 28%;
+    }
+
+    &-item2:after {
+      content: "";
+      background-color: $brand-color-6;
+      position: absolute;
+    
+      display: inline;
+      height: 100%;
+      width: 1px;
+    
+      left: 50%;
+    }
+
+    &-item3:after {
+      content: "";
+      background-color: $brand-color-6;
+      position: absolute;
+
+      display: inline;
+      height: 100%;
+      width: 1px;
+
+      left: 74%;
+    }
+  }
+}
+
+.menu-toggle svg {
+  fill: black;
+
+  &:hover svg {
+    fill: $brand-color-1;
+  }
+}

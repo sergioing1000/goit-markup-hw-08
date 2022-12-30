@@ -1,0 +1,57 @@
+.regular-customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  padding-top: 94px;
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $brand-color-2;
+  }
+
+  &__columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+
+    padding-top: 50px;
+    padding-bottom: 94px;
+  }
+
+  &__box {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $brand-color-6;
+    border-radius: 4px;
+    text-align: center;
+
+    padding: 16px;
+
+    fill: 4brand-color-6;
+
+    &:hover {
+      border-color: $brand-color-1;
+      fill: $brand-color-1;
+      cursor: pointer;
+    }
+  }
+}
